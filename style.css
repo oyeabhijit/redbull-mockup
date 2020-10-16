@@ -33,6 +33,33 @@ header
     align-items: center;
 }
 
+footer
+{
+    display: block;
+    flex-flow: row wrap;
+    padding: 70px;
+    color: #fff;
+    background-color: #111;
+    text-align: center;
+}
+
+footer .socials
+{
+    filter: invert();
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    position: relative;
+    margin-left: auto;
+    align-items: center;
+}
+
+footer .socials > a > img{
+    width:25px;
+    height:25px;
+    word-spacing: 5px;
+}
+
 header .logo
 {
     position: relative;
@@ -171,4 +198,31 @@ header ul li a
     filter: invert(1);
     margin: 5px 0;
     transform: scale(0.6);
+}
+
+@media screen and (min-width: 600px)
+{
+    .footer > *
+    {
+        flex: 1;
+    }
+    .body > *
+    {
+        flex: 1;
+    }
+}
+@media (max-width: 600px)
+{
+    .footer
+    {
+        padding: 15px;
+    }
+    main
+    {
+        font-size=55px;
+    }
+    body
+    {
+        padding: 15px;
+    }
 }
