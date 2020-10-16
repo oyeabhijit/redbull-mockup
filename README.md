@@ -1,5 +1,5 @@
 # Redbull Mockup Site
-This site is a replica of a Code-Pen sample project. I did some minor changes.
+This site is a sample project.
 <br>
 <strong>
   Website has been deployed <a href="https://redbullmockup.netlify.app/" target="_blank"> here </a> 
