@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+        <title>Pepsi International</title>
+           <link rel="stylesheet"href="style.css">
+    </head>
+    <body>
+        <section class="sec">
+            <header>
+                <a href="#"><img src="images/redbulllogo.png" class=logo></a>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="https://www.redbull.com/in-en/energydrink" target="_blank">Products</a></li>
+                    <li><a href="https://www.redbull.com/in-en/discover" target="_blank">What's New</a></li>
+                    <li><a href="https://www.redbull.com/in-en/theredbulletin" target="_blank">Newsletter</a></li>
+                    <li><a href="https://www.redbull.com/in-en/energydrink/contact" target="_blank">Contact</a></li>
+                </ul>
+            </header>
+            <div class="content">
+                <div class="textBox">
+                    <h2> That's What<br><span>Heroes Do.</span></h2>
+                    <a href="https://www.redbull.com/in-en/energydrink" target="_blank">View All Products</a>
+                </div>
+                <div class="imgBox">
+                    <img src="images/redbull001.png" class="pepsi">
+                </div>
+            </div>
+            <ul class="thumb">
+                <li><img src="images/redbull001.png"onclick="imgSlider('images/redbull001.png');changeBgColor('#00008a')"></li>
+                <li><img src="images/redbull002.png"onclick="imgSlider('images/redbull002.png');changeBgColor('#1e1e1e')"></li>
+                <li><img src="images/redbull003.png"onclick="imgSlider('images/redbull003.png');changeBgColor('#e7b205')"></li>
+            </ul>
+            <ul class="sci">
+                <li><a href="https://www.facebook.com/RedBull" target="_blank"><img src="images/facebook.png"></a></li>
+                <li><a href="https://www.twitter.com/redbull" target="_blank"><img src="images/twitter.png"></a></li>
+                <li><a href="https://www.instagram.com/redbull" target="_blank"><img src="images/instagram.png"></a></li>
+            </ul>
+        </section>
+        <script type="text/javascript">
+            function imgSlider(anything)
+            {
+                document.querySelector('.pepsi').src = anything;
+            }
+            function changeBgColor(color)
+            {
+                const sec = document.querySelector('.sec');
+                sec.style.background = color;
+            }
+        </script>
+    </body>
+</html>
